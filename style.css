@@ -33,7 +33,7 @@ p,button {
 /*Cover, judul dan sinopsis*/
 
 #cover {
-  background: url("gambar/blur.jpg");
+  background: url("blur.jpg");
   position: relative;
   top: 0;
   left: 0;
@@ -103,7 +103,7 @@ p,button {
 }
 
 #sinopsis {
-  background: url("gambar/cover.jpg");
+  background: url("cover.jpg");
   width: 100%;
   min-height: 100vh;
   padding-top: 15px;
