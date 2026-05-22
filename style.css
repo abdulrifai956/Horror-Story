@@ -1,0 +1,276 @@
+:root {
+  --merah:linear-gradient(to bottom, #000000, #1a0000,#4b0000);
+  --hijau:radial-gradient(circle at top,#5f7d62,#243328 60%,#0a0f0b);
+    --black: black;
+    --cyan: cyan;
+    --gradien-blue: linear-gradient(90deg, #00FFFF, #1F51FF, #4D4DFF);
+    --Gradien-pink: linear-gradient(to right, #ff4ecd, #7b2ff7, #1a0026);
+    --Hitam-gradien: linear-gradient(to right, #000000, #777777, #ffffff);
+    --white: white;
+    --pink: pink;
+    --lime-gradien: linear-gradient(to right, #7fff00, #00e5ff);
+    --cream-gradien: linear-gradient(to right, #fff8dc, #e6d3a3);
+      --fs-kecil: 0.9rem;
+    --fs-normal: 1rem;
+    --fs-sedang: 1.3rem;
+    --fs-besar: 2rem;
+    --fs-judul: 3rem;
+}
+
+
+body {
+  margin:0;
+  padding:0;
+  width:100%;
+  min-height:100%;
+}
+#blur {
+  display: none;
+}
+p,button {
+  font-size: 1.5rem;
+}
+/*Cover, judul dan sinopsis*/
+
+#cover {
+  background: url("gambar/blur.jpg");
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 15px;
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+#cover img {
+  width: 50%;
+  filter: drop-shadow(15px 15px 20px gray);
+  border-radius: 5px;
+}
+#cover a {
+    text-decoration: none;
+}
+#cover i {
+  font-size:38px;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  color: cyan;
+}
+.judul h1 {
+  text-align: center;
+  min-height: 50%;
+  color: #7dd3fc;
+  margin: 10px;
+  margin-top: 20%;
+  font-family: Verdana, Sans-Serif;
+  font-weight: bold;
+  filter: none;
+  text-shadow: 0 0 10px cyan, 0 0 10px rgba(0,255,255,0.5);
+}
+.judul p {
+  color: #7dd3fc;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+  font-size: 20px;
+  text-align: center;
+}
+#tombol {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  bottom: 50%;
+  font-size: 26px;
+  background: var(--Hitam-gradien);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;
+  margin-top: 20%;
+}
+#tombol:hover {
+  background: var(--cream-gradien);
+}
+
+#sinopsis {
+  background: url("gambar/cover.jpg");
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 15px;
+  color: cyan;
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-y: auto;
+}
+#sinopsis h1 {
+  margin: 19px;
+  font-size: 40px;
+  font-family: 'cinzel',Serif;
+  text-shadow: 0 0 10px cyan, 0 0 10px rgba(0,255,255,0.5);
+}
+#sinopsis p {
+    color:#c9b8a6;
+    text-shadow:
+    2px 2px 0 #000,
+    4px 4px 8px rgba(0,0,0,.95),
+    0 0 20px rgba(0,0,0,.9); 
+    line-height:2;
+    text-align:center;
+    max-width:700px;
+    margin:3px;
+    letter-spacing:1px;
+    background:
+    rgba(0,0,0,0.35);
+    border-radius: 10px;
+
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 5px;
+}
+.lnjt {
+  padding: 10px 20px;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--lime-gradien);
+}
+.lnjt:hover {
+  background: var(--Hitam-gradien);
+  color: darkred;
+}
+
+#menu {
+   width: 100%;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    position: relative;
+    z-index: 2;
+
+    margin-top: 0;
+    padding-top: 80px;
+
+    background: linear-gradient(to bottom, #3b0000, #8b0000, #ff0000);
+    overflow-y: auto;
+}
+.btn {
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 15px 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #dbeafe;
+}
+.btn:hover {
+  background: var(--Hitam-gradien);
+  color: crimson;
+}
+
+@media (min-width: 768px) {
+  #cover {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  }
+  .judul h1{
+    font-size: 4rem;
+    margin-top: 5%;
+  }
+  .judul p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    text-align: center;
+  }
+ #tombol {
+    width: 220px;
+    font-size: 1.3rem;
+    margin-top: 5%;
+ }
+ #sinopsis p {
+    max-width: 800px;
+    margin: auto;
+
+    padding: 20px;
+ }
+ #menu {
+   padding-top: 50px;
+ }
+ .btn {
+    width: 400px;
+
+ }
+}
+
+/* Chapter 1 */
+body {
+  margin: 0;
+  padding: 0;
+   background:
+  rgba(12, 35, 12, 0.6);
+  
+
+}
+hr{
+  border:none;
+  height:2px;
+  background:linear-gradient(to right,
+  transparent,
+  white,
+  transparent);
+
+  width:90%;
+  margin:20px auto;
+}
+#cover1 {
+  padding-top: 10px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+#cover1 img {
+  width: 30%;
+  border-radius: 8px;
+}
+#hal_1 {
+  padding: 10px;
+  line-height: 1.7;
+  color: #cfd8cc;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
