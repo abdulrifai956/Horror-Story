@@ -274,3 +274,44 @@ hr{
   letter-spacing: 0.5px;
   font-weight: bold;
 }
+
+/* Chapter 2 */
+
+#main {
+  background: url("prank_blur.png");
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 15px;
+
+
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 20px;
+}
+#cover2 {
+  padding-top: 10px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+#cover2 img {
+  width: 30%;
+  border-radius: 8px;
+}
+#hal_2 {
+  padding: 0 20px;
+  line-height: 1.7;
+  color: cyan;
+  text-shadow:
+0 0 6px rgba(0,0,0,0.9),
+0 0 12px rgba(0,0,0,0.7);
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.5px;
+  font-weight: 200px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.tmbl {
+  display: flex;
+  justify-content: space-between;
+}
