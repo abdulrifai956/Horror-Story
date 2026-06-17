@@ -430,3 +430,29 @@ hr{
   font-weight: 200px;
   padding-bottom: 10px;
 }
+
+/* Chapter 6 */
+#main5 {
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+#cover6 h1{
+  color: #e0f2fe;
+  text-align: center;
+}
+
+#hal_6 {
+  padding: 0 20px;
+  line-height: 1.7;
+  color: #e0f2fe;
+  text-shadow:
+0 0 6px rgba(0,0,0,0.9);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5px;
+  font-weight: 200px;
+  padding-bottom: 10px;
+}
