@@ -138,7 +138,13 @@ p,button {
     background:
     rgba(0,0,0,0.35);
     border-radius: 10px;
-
+}
+#sinopsis a {
+    font-size:18px;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  color: cyan;
 }
 
 .tombol {
